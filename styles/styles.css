@@ -1,3 +1,57 @@
 body {
+    max-width: 1440px;
     display: flex;
+    flex-direction: column;
+
+}
+.container {
+    border: 3px solid black;
+}
+.travel-title {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+.login-button {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+.nav {
+    flex-grow: 2;
+}
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    border: 3px solid red;
+}
+.header-menu {
+    position: absolute;
+    width: 1440px;
+    background-color: rgba(49, 236, 236, 0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-main {
+    background-image: url("../images/header-main.png");
+    height: 765px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.header-main-title {
+    color: orange;
+    border: 3px solid red;
+}
+.center {
+    background-color: royalblue;
+}
+.stories {
+    background-color: hotpink;
+}
+.footer {
+    background-color: blueviolet;
 }
