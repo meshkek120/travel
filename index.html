@@ -9,6 +9,21 @@
     <title>Travel</title>
 </head>
 <body>
+
+  <div class="popup">
+    <div class="popup-content">
+      <a href="#" class="close" id="close">X</a>
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+      <a href="#" class="button">Login</a>
+    </div>
+
+    
+ </div>
+
+ <div class="wrapper">
+
+
     <div class="container header-menu">
     <div class="travel-title">
       <h2>Travel Portal</h2>
@@ -19,12 +34,15 @@
           <li class="nav-item"><a href="#plantrip" class="nav-link">Plan Your Trip</a></li>
           <li class="nav-item"><a href="#destinations" class="nav-link">Destinations</a></li>
           <li class="nav-item"><a href="#stories" class="nav-link">Travel Stories</a></li>
+          <li class="nav-item"><a href="#" class="button login-button" id="button">Login</a></li>
         </ul>
       </nav>
-      <section class="login-button">
-        <button>Login</button>
-      </section>
+
+      
+     
+     
     </div>
+  </div>
     <div class="container header-main">
       <div class="header-main-title">
         <h2>Exlore the beauty of the World</h2>
@@ -43,5 +61,18 @@
         <h2>Footer</h2>
         <p>Обратите внимание, что поддержка браузером этих значений имеет свои нюансы. Например, space-between никогда не получал поддержку Edge, а start / end / left / right еще нет в Chrome.</p>
       </div>
+
+
+      <script>
+
+document.getElementById("button").addEventListener("click", function() {
+     document.querySelector(".popup").style.display = "flex";
+})
+
+document.getElementById("close").addEventListener("click", function() {
+     document.querySelector(".popup").style.display = "none";
+})
+
+      </script>
 </body>
 </html>
