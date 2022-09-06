@@ -1,0 +1,3 @@
+//- make carousel
+- make it adaptive with smooth breakpoints
+- make header placed over the "container main"
