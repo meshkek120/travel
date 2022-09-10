@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles/style_new.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles/style_new.css">
     <title>Travel 2.0</title>
 </head>
 <body>
@@ -26,9 +29,26 @@
                     <li><a class="button-nav" href="#">Destinations</a></li>
                     <li><a class="button-nav" href="#">Travel Stories</a></li>
                     <li><a class="button" id="button" href="#">Login</a></li>
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3 "></div>
+                    </div>
                 </ul>
             </nav>
         </div>
+
+        <div class="menu-mobile">
+            <nav class="nav-mobile">
+                <ul class="nav-list-mobile">
+                    <li><a class="button-nav-mobile" href="#">How It Works</a></li>
+                    <li><a class="button-nav-mobile" href="#">Plan Your Trip</a></li>
+                    <li><a class="button-nav-mobile" href="#">Destinations</a></li>
+                    <li><a class="button-nav-mobile" href="#">Travel Stories</a></li>
+                </ul>
+            </nav>
+        </div>
+
         <div class="container content">
             <div class="container main">
                 <div class="main-inside">
@@ -69,10 +89,19 @@
     <script>
         document.getElementById("button").addEventListener("click", function() {
              document.querySelector(".popup").style.display = "flex";
+             document.querySelector("body").style.overflowY = "hidden";            
         })
         
         document.getElementById("close").addEventListener("click", function() {
              document.querySelector(".popup").style.display = "none";
+             document.querySelector("body").style.overflowY = "scroll";
+        })
+
+
+              
+        document.querySelector(".burger").addEventListener("click", function() {
+             document.querySelector(".menu-mobile").style.display = "flex";
+             document.querySelector(".burger").style.display = "none";
         })
     </script>
 </body>
