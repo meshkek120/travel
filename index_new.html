@@ -8,6 +8,14 @@
     <title>Travel 2.0</title>
 </head>
 <body>
+    <div class="popup">
+        <div class="popup-content">
+          <a href="#" class="close" id="close">X</a>
+          <input type="text" class="input_popup" placeholder="Username">
+          <input type="password" class="input_popup" placeholder="Password">
+          <a href="#" class="button_popup">Login</a>
+        </div>
+     </div>
     <div class="container">
         <div class="container menu">
             <h2>Travel Portal</h2>
@@ -17,7 +25,7 @@
                     <li><a class="button-nav" href="#">Plan Your Trip</a></li>
                     <li><a class="button-nav" href="#">Destinations</a></li>
                     <li><a class="button-nav" href="#">Travel Stories</a></li>
-                    <li><a class="button" href="#">Login</a></li>
+                    <li><a class="button" id="button" href="#">Login</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,7 +35,7 @@
                     <h2>Exlore the beauty of the World</h2>
                     <p>Receive personalized recommendations for countries, hotels, activities and more</p>
                     <div class="search-bar">
-                        <input type="text" placeholder="What would you like to do?">
+                        <input type="text" class="input" placeholder="What would you like to do?">
                         <a class="button" id="button-start" href="#">Start Planning</a>
                     </div>
                 </div>
@@ -58,5 +66,14 @@
             </div>
         </div>
     </div>
+    <script>
+        document.getElementById("button").addEventListener("click", function() {
+             document.querySelector(".popup").style.display = "flex";
+        })
+        
+        document.getElementById("close").addEventListener("click", function() {
+             document.querySelector(".popup").style.display = "none";
+        })
+    </script>
 </body>
 </html>

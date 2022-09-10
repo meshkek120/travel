@@ -2,9 +2,9 @@ body {
     display: flex;
     flex-direction: column;
     font-family: tahoma;
+    max-width: 1440px;
 }
 .container {
-    border: 1px solid rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
 }
@@ -13,9 +13,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     background-color: rgba(255,100,0,0.4);
-    position: absolute;
-    width: -moz-available;
-    margin-right: 1%;
+    /*width: -moz-available;*/
   }
 .menu h2 {
     color: white;
@@ -127,7 +125,7 @@ body {
     display: flex;
     align-items: center;
 }
-input {
+.input {
     /*margin: 20px auto;*/
     display: block;
     width: 100%;
@@ -139,4 +137,71 @@ input {
     color: rgba(255,100,0,1);
     font-size: 18px;
     font-style: italic;
+}
+.input_popup {
+    margin: 20px auto;
+    display: block;
+    width: 50%;
+    padding: 8px ;
+    border: 1px solid gray;
+
+}
+.popup {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 1440px;
+    height: 1600px;
+    margin-top: 0.48%;
+    position: absolute;
+    top: -10%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.popup-content{
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: 20%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+.close {
+    background: #fff;
+    padding: 10px 13px;
+    color: #34495e;
+    font-weight: bolder;
+    text-transform: uppercase; 
+    font-size: 15px;
+    border-radius: 50px;
+    box-shadow: 6px 6px 30px -4px rgba(0, 0, 0, 0.75);
+    text-decoration: none;
+    transition: 0.3s;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}
+.close:hover {
+    background: rgba(255, 4, 4, 1);
+    color: #fff;
+    box-shadow: 6px 6px 30px -4px rgba(0, 0, 0, 0.75);
+} 
+.button_popup {
+    background: #fff;
+    padding: 10px 15px;
+    color: #34495e;
+    font-weight: bolder;
+    text-transform: uppercase; 
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 6px 6px 30px -4px rgba(0, 0, 0, 0.75);
+    text-decoration: none;
+    transition: 0.3s;
+}
+.button_popup:hover {
+    background:  rgba(0, 255, 0, 0.5);
+    color: #fff;
 }
